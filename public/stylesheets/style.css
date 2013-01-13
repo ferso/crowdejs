@@ -108,6 +108,7 @@ ul.crowdStats li#days {
   border: 1px solid #0e96e4;
   font-size: 22px;
   margin: 20px auto;
+  letter-spacing: 0.07em;
 }
 .blue_button:hover {
   box-shadow: rgba(255,255,255,0.922) 0 1px 1px, rgba(0,0,0,0.22) 0 -1px 1px inset;
