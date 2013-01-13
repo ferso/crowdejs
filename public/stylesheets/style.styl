@@ -1,5 +1,29 @@
 body
   padding: 50px
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  background: url('../assets/img/bg-grid.png') repeat
 a
   color: #00B7FF
+
+navbarColor()
+	background: #063a5b;
+	background-size: 100%; 
+	background-image: -moz-linear-gradient(top,  #063a5b 0%, #11486c 53%, #11486c 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#063a5b), color-stop(53%,#11486c), color-stop(100%,#11486c));
+	background-image: -webkit-linear-gradient(top,  #063a5b 0%,#11486c 53%,#11486c 100%);
+	background-image: -o-linear-gradient(top,  #063a5b 0%,#11486c 53%,#11486c 100%);
+	background-image: -ms-linear-gradient(top,  #063a5b 0%,#11486c 53%,#11486c 100%);
+	background-image: linear-gradient(to bottom,  #063a5b 0%,#11486c 53%,#11486c 100%);
+
+.navbar-inverse .navbar-inner
+	navbarColor n
+	padding: 10px 0
+
+a.mainLogo
+	margin: 0 auto !important
+	background: url('../assets/img/logo.png') no-repeat
+	font-size:0
+	text-indent: -9999px
+	width: 352px
+	height: 66px
+	display: block

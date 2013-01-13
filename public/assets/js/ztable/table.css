@@ -1,0 +1,278 @@
+/*Table UI 
+-----------------------------------*/
+
+.ztable {	
+	position:relative;
+}
+
+.ztable .fix{
+	clear:both;
+	padding:10px;
+}
+.ztable .navi {  
+  margin-top: 15px;
+  display: table;
+  float: right;  
+}
+
+.ztable .navi a {
+
+  font-size: 12px;
+  margin-right: 3px;
+  padding: 5px 9px;   
+  text-decoration: none;
+  border-radius: 2px;
+  border:1px solid #ddd;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  /*color:#208fd6;*/
+  color: #d6084c;
+ 
+ }
+
+.ztable .navi a:hover {
+	
+	text-decoration:underline;	
+}
+.ztable .navi a.active {
+   color: #ffffe9;
+  background:#208fd6 url(/assets/css/default/images/bg-button.png) repeat-x bottom left;
+  border:1px solid #208fd6;
+  
+ }
+  
+  
+ .ztable .navi a.banned{	 
+	  color:#ddd;
+	  border:1px solid #ddd;
+	  text-decoration:none;	
+ }
+  
+.ztable table.grid {
+  padding: 0;
+  margin: 0; 
+
+ }
+  .ztable table.grid h3 {
+    width: 100%;
+	border:0;
+	margin:0;
+	padding:0;
+	
+}
+
+.ztable table.grid tbody{ 
+
+	
+}
+
+
+.ztable table.grid tbody tr {
+    /* CSS3 */   
+		  background-color: #fff;
+		  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f8f8f8)); /* Saf4+, Chrome */
+		  background-image: -webkit-linear-gradient(top, #ffffff, #f8f8f8); /* Chrome 10+, Saf5.1+, iOS 5+ */
+		  background-image:    -moz-linear-gradient(top, #ffffff, #f8f8f8); /* FF3.6 */
+		  background-image:     -ms-linear-gradient(top, #ffffff, #f8f8f8); /* IE10 */
+		  background-image:      -o-linear-gradient(top, #ffffff, #f8f8f8); /* Opera 11.10+ */
+		  background-image:         linear-gradient(to bottom, #ffffff, #f8f8f8);
+	
+}
+
+
+.ztable table.grid tbody tr:hover {
+	  
+	   background: #f9f9f9; 	   
+}
+   
+.ztable table.grid tbody tr:nth-child(even):hover,
+.ztable table.grid  tbody tr.even:hover {
+    background: #f9f9f9; 	
+}
+	
+.ztable table.grid tbodytd.row2 {
+		
+		 /*background: #f4fef4; */
+		
+		 background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2); /* Chrome 10+, Saf5.1+, iOS 5+ */		 
+		 background-color: #fff;
+		  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f2f2f2)); /* Saf4+, Chrome */
+		  background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2); /* Chrome 10+, Saf5.1+, iOS 5+ */
+		  background-image:    -moz-linear-gradient(top, #ffffff, #f2f2f2); /* FF3.6 */
+		  background-image:     -ms-linear-gradient(top, #ffffff, #f2f2f2); /* IE10 */
+		  background-image:      -o-linear-gradient(top, #ffffff, #f2f2f2); /* Opera 11.10+ */
+		  background-image:         linear-gradient(to bottom, #ffffff, #f2f2f2);
+   }
+   
+   
+.ztable table.grid td, .ztable table.grid th {
+    padding: 10px;
+    vertical-align: middle;
+    font-size: 1em;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+	color:#333; 
+	 
+}
+	
+.ztable table.grid th {
+   
+	font-size: 15px;   
+	text-align: center;
+	border-top: 2px solid #9d9da1;	
+	color:#333;
+	border-bottom:1px solid #9d9da1;		
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight:300;
+		
+}
+	
+.ztable table.grid th a{
+		color:#333;
+		text-decoration:underline;
+}
+	
+	
+.ztable table.grid th.sortable{
+		
+	cursor:pointer;
+	text-decoration:underline;
+	background:url(images/sort_desc_alt.png) right center no-repeat;
+		
+}
+	
+.ztable table.grid th.sortable:hover{
+		text-decoration:none;		
+}
+	
+.ztable table.grid th.sortableUp{
+			
+	background:url(images/sort_asc.png) right center no-repeat;
+		
+}
+	
+.ztable table.grid th.sortableField{
+		
+	background-color:#eee;
+			
+}
+	
+.ztable table.grid td.oftitle{
+	
+	position:relative;
+	border:0;
+	color:#333;
+	padding-left:0;		
+	
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border:1px solid #ccc;
+	border:0;		
+}
+	
+.ztable table.grid td.oftitle h3{
+		
+	color:#333;
+	border:0;
+	/*font-family: 'Josefin Sans', sans-serif;*/
+	font-weight:400;
+	padding:0;
+	border-bottom: 1px solid rgba(45,45,45,0.3);
+	margin-bottom: 20px;
+		
+}
+	
+	
+  .ztable table.grid td.last, .ztable table.grid li.last, .ztable table.grid div.last {
+    border-bottom: 0 !important; }
+  .ztable table.grid strong {
+    font-weight:bold;
+    font-style: italic;
+    color: #333; }
+  .ztable table.grid td.last {
+    border-bottom: 0;
+    border-bottom: 2px solid #ccc; }
+  .ztable table.grid td.nogrid, .ztable table.grid th.nogrid {
+    border-right: 0;
+    border-left: 0; }
+  .ztable table.grid td.lastcol, .ztable table.grid th.lastcol {
+    border-right: 0;
+    border-left: 0; }
+  .ztable table.grid td.date {
+    font-size: 0.8em; }
+  .ztable table.grid td.center {
+    text-align: center; }
+  .ztable table.grid th.left {
+    text-align: left; }
+  .ztable table.grid td a {
+    /*color: #208fd6;*/
+    /*color: #EF407A;*/
+    color: #818181;
+    /*text-decoration: underline; */
+    text-decoration: none;
+}
+  .ztable table.grid a:hover {
+    /*text-decoration: none; */
+    text-decoration: underline;
+    text-shadow: 0px 0px 1px #818181;
+  	filter: dropshadow(color=#818181, offx=0, offy=0);
+  	  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+	}
+
+a.delete-item{
+
+	background:url(/assets/css/default/images/icon-table-delete.png) no-repeat;
+	padding-left:20px;
+	padding-top:4px;
+	display:block;	
+	width:80px;
+	height:20px;
+	
+}
+
+a.delete-item:hover{
+	
+	color:#208fd6;
+}
+
+table.grid .search-container{	
+	position:relative;	
+	display:block;
+	width:100%;
+}
+
+table.grid input.search{	
+	
+	font-size:14px;
+	width:40%;
+	padding:6px;
+	position:absolute;
+	right:-8px;
+	top:-6px;
+	color:#ccc;
+	background:none;
+	border:1px solid #ccc !important;
+	
+	
+}
+
+table.grid input.search:focus{
+	
+	color:#333;
+	
+}
+
+table.grid button.bt_search{
+	
+	float:left;
+ }
+
+
