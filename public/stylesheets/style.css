@@ -1,6 +1,5 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 110px;
   background: url("../assets/img/bg-grid.png") repeat;
 }
 a {
@@ -16,14 +15,62 @@ a {
   background-image: -ms-linear-gradient(top, #063a5b 0%, #11486c 53%, #11486c 100%);
   background-image: linear-gradient(to bottom, #063a5b 0%, #11486c 53%, #11486c 100%);
   padding: 10px 0;
+  box-shadow: #acacac 0 1px 3px 0;
 }
 a.mainLogo {
   margin: 0 auto !important;
-/*border: 1px solid red;*/
   background: url("../assets/img/logo.png") no-repeat;
   font-size: 0;
   text-indent: -9999px;
   width: 352px;
   height: 66px;
   display: block;
+}
+.span10,
+.row {
+  margin-left: 0 !important;
+  width: 1000px;
+  height: auto;
+  margin: 0 auto !important;
+}
+h1 {
+  color: #4b4b4b;
+  font-size: 45px;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.1em;
+  margin-bottom: 40px;
+}
+ul.crowdStats {
+  list-style-type: none;
+}
+ul.crowdStats li {
+  float: left;
+  padding: 5px 6px;
+  font-size: 24px;
+}
+ul.crowdStats li span {
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+  font-size: 18px;
+  margin-top: 5px;
+  color: #868686;
+}
+ul.crowdStats li#backers {
+  border-right: 1px solid #acacac;
+  padding-right: 25px;
+}
+ul.crowdStats li#amount {
+  padding: 5px 25px;
+}
+ul.crowdStats li#days {
+  border-left: 1px solid #acacac;
+  padding-left: 25px;
+}
+.span4.fundProg {
+  margin-top: 30px;
+}
+.progress {
+  background: #ddd;
 }
