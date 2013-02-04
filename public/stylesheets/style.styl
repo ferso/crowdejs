@@ -98,9 +98,15 @@ ul.crowdStats
 .progress
 	background: #ddd
 
-.blue_button
+.blueButton
 	box-shadow:rgba(255, 255, 255, 0.921569) 0 1px 1px, rgba(0, 0, 0, 0.219608) 0 -1px 1px inset
-	background-image:-webkit-linear-gradient(90deg, #0E96E4 0%, #02A0FA 100%)
+	background: #02a0fa
+	background: -moz-linear-gradient(top,  #02a0fa 0%, #0e96e4 99%)
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#02a0fa), color-stop(99%,#0e96e4))
+	background: -webkit-linear-gradient(top,  #02a0fa 0%,#0e96e4 99%)
+	background: -o-linear-gradient(top,  #02a0fa 0%,#0e96e4 99%)
+	background: -ms-linear-gradient(top,  #02a0fa 0%,#0e96e4 99%)
+	background: linear-gradient(to bottom,  #02a0fa 0%,#0e96e4 99%)
 	border-bottom-left-radius:10px
 	border-bottom-right-radius:10px
 	border-top-left-radius:10px
@@ -115,17 +121,20 @@ ul.crowdStats
 	font-size: 22px
 	margin: 20px auto
 	letter-spacing: 0.07em
+	text-align: center
 
-.blue_button:hover
+.blueButton:hover, .blueButton:active
 	box-shadow:rgba(255, 255, 255, 0.921569) 0 1px 1px, rgba(0, 0, 0, 0.219608) 0 -1px 1px inset
-	background-image:-webkit-linear-gradient(90deg, #2DA4E9 0%, #21AEFF 100%)
+	background: #21aeff
+	background: -moz-linear-gradient(top,  #21aeff 1%, #2da4e9 100%)
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#21aeff), color-stop(100%,#2da4e9))
+	background: -webkit-linear-gradient(top,  #21aeff 1%,#2da4e9 100%)
+	background: -o-linear-gradient(top,  #21aeff 1%,#2da4e9 100%)
+	background: -ms-linear-gradient(top,  #21aeff 1%,#2da4e9 100%)
+	background: linear-gradient(to bottom,  #21aeff 1%,#2da4e9 100%)
 	box-shadow:rgba(255, 255, 255, 0.921569) 0 1px 1px, rgba(0, 0, 0, 0.219608) 0 -1px 1px inset
 	text-decoration:initial
-
-.blue_button:active
-	box-shadow:rgba(255, 255, 255, 0.921569) 0 1px 1px, rgba(0, 0, 0, 0.219608) 0 3px 5px inset
-	background-image:-webkit-linear-gradient(90deg, #039FF7 0%, #039FF7 100%)
-	box-shadow:rgba(255, 255, 255, 0.921569) 0 1px 1px, rgba(0, 0, 0, 0.219608) 0 3px 5px inset
+	color: #fff
 
 footer, #footer
 	margin-top: 30px

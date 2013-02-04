@@ -33,11 +33,15 @@ app.configure(function(){
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
+var max   = 16000;
+var date  = '2013-02-28';
+
 app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
 app.get('/', function(req, res){
+    console.log(date);
     res.render('index.ejs', {}, function(err, str) {
         res.render('layout.ejs', {
             body: str
